@@ -1,0 +1,132 @@
+.addproject-root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 90vh;
+  background: transparent;
+}
+.addproject-card {
+  background: #181818;
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.14);
+  padding: 36px 32px;
+  margin: 32px 0;
+  width: 100%;
+  max-width: 800px;
+}
+.addproject-title {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+.addproject-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.addproject-input, .addproject-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #d1d5db;
+  font-size: 1.08rem;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  background: #fff;
+  color: #181818;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.addproject-input:focus, .addproject-form select:focus {
+  border: 1.5px solid #6c63ff;
+  box-shadow: 0 2px 8px rgba(108,99,255,0.08);
+}
+.addproject-form label {
+  font-size: 1rem;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+.addproject-row {
+  display: flex;
+  gap: 18px;
+}
+.addproject-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.addproject-dropzone {
+  border: 2px dashed #bbb;
+  border-radius: 10px;
+  background: #fff;
+  color: #181818;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+.addproject-dropzone:hover {
+  border: 2px solid #6c63ff;
+  box-shadow: 0 2px 12px rgba(108,99,255,0.10);
+}
+.addproject-dropicon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.addproject-uploaded {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+.addproject-file {
+  background: #fff;
+  color: #181818;
+  border-radius: 8px;
+  padding: 14px 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.08rem;
+  min-width: 180px;
+  margin-bottom: 0;
+  border: 1.5px solid #d1d5db;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  font-weight: 500;
+}
+.addproject-fileicon {
+  font-size: 1.3rem;
+}
+.addproject-submit {
+  background: #fff;
+  color: #181818;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+.addproject-submit:hover {
+  background: #FFD700;
+  color: #181818;
+  box-shadow: 0 2px 12px rgba(255,215,0,0.10);
+}
+@media (max-width: 700px) {
+  .addproject-card {
+    padding: 18px 6px;
+    max-width: 98vw;
+  }
+  .addproject-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+} 
